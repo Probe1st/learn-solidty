@@ -1,6 +1,14 @@
 {
+    "name": "learn_blockchain",
     "devDependencies": {
         "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "chai": "4.5",
+        "ethers": "^6.13.4",
         "hardhat": "^2.22.17"
+    },
+    "scripts": {
+        "start": "npx hardhat node",
+        "deploy:MopedShop": "npx hardhat ignition deploy ./ignition/modules/MopedShop.ts",
+        "test:MopedShop": "npx hardhat test ./test/MopedShop.ts"
     }
 }
